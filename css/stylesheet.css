@@ -20,6 +20,13 @@ a{
 ul{
     list-style: none;
 }
+h1{
+    text-align: center;
+}
+.access {
+    padding: 2% 10%;
+    font-size: 18px;
+}
 
 /* ACCESSIBILITY BAR STYLES */
 .flex-container{
@@ -107,10 +114,23 @@ nav a:hover{
     border-radius: 5px;
 }
 
-
 /* SECTION STYLES */
 section > :first-child{
     width:100%;
+}
+h2 {
+    text-align: center;
+    margin-top: 50px;
+}
+.ambientes {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+.ambientes img {
+    border-radius: 10px;
 }
 
 /* FOOTER STYLES */

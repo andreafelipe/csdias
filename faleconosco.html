@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
+
 <head>
     <!-- METADATA -->
     <meta charset="UTF-8">
@@ -17,9 +18,10 @@
     <script src="https://kit.fontawesome.com/4acddd13b5.js" crossorigin="anonymous"></script>
 
     <!-- JQUERY -->
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <div class="acessibilidade flex-container">
         <ul class="atalhos">
@@ -94,20 +96,31 @@
             <li><a href="faleconosco.html">Fale Conosco</a></li>
         </ul>
     </nav>
-    <main id="conteudo">
-        <section>
-            <img src="imagens/banner/b1.png" alt="banner ilustrativo">
-            <h2>AMBIENTES</h2>
-            <div class="ambientes">
-                <img src="imagens/cards/cardauditorio.jpg" alt="cadeiras de auditório com estofado na cor azul, estrutura em preto">
-                <img src="imagens/cards/cardescolar.png" alt="carteira universitária, encosto e assento na cor laranja com pracheta na cor branca">
-                <img src="imagens/cards/cardescritorio.jpg" alt="Escritório com mesa em L e pequeno armário em tom de madeira, duas cadeiras com estofado azul, uma giratória e outra comum em lados opostos da mesa.">
-                <img src="imagens/cards/cardinformatica.png" alt="Rack para computador, comporta impressora, tela, teclado, scanner e cpu todos na cor branca.">
-                <img src="imagens/cards/cardrecepcao.jpg" alt="Balcão de atendimento para recepção cinza com planos em azul, cadeira giratória sem braço com encosto e assento em azul, mesmo tom do plano do balcão">
-                <img src="imagens/cards/cardtelemarketing.png" alt="Baia para telemarketing na cor branca com plano em azul com três lugares, respectivamente, três cadeiras giratórias sem braço com encosto e assento em azul, estrutura em branco">
-            </div>
-        </section>
-    </main>
+
+    <h1>Fale conosco</h1>
+    <form>
+        <label for="email">E-mail</label>
+        <br>
+        <input type="email" name="email" id="email">
+        <br>
+        <label for="tel">Telefone</label>
+        <br>
+        <input type="tel" name="tel" id="tel">
+        <br>
+        <label for="assunto">Assunto</label>
+        <br>
+        <select name="assunto" id="assunto">
+            <option value="Dúvidas">Dúvidas</option>
+            <option value="orcamentos">Orçamentos</option>
+            <option value="reclamacoes">Reclamações</option>
+            <option value="sugestoes">Sugestões</option>
+        </select>
+        <br>
+        <label for="mensagem">Mensagem</label>
+        <br>
+        <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+    </form>
+
     <footer id="rodape">
         <ul>
             <li><a href="">Início</a></li>
@@ -128,5 +141,7 @@
 
     <script src="js/contraste.js"></script>
     <script src="js/fonte.js"></script>
+
 </body>
+
 </html>
