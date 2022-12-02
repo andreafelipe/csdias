@@ -61,27 +61,36 @@ header {
   justify-content: space-around;
 }
 
-.search_bar {
-  border: #e3d4bb 1px solid;
+.search_bar{
+  border:#e3d4bb 1px solid;
   padding: 8px;
   border-radius: 10px;
+  width: 30%;
 }
 
-.search_bar input {
+.search_bar button{
+  border:none;
+  background-color: #200a0c;
+}
+
+.search_bar input{
   font-size: 1.5em;
   border-radius: 8px;
   margin-left: 10px;
   text-align: center;
+  width: 90%;
 }
 
-.user_icons {
-  padding-right: 20px;
+.user_icons{
+  width: 15%;
+  display: flex;
+  justify-content: space-around;
 }
 
 /*NAV STYLES*/
 nav {
   border-bottom: #000 solid 2px;
-  padding: 15px;
+  padding: 10px;
 }
 
 nav ul {
@@ -101,6 +110,7 @@ nav a:hover {
 .produtos-list ul {
   display: none;
   position: absolute;
+  z-index: 1;
 }
 
 .produtos-list:hover ul {
@@ -219,3 +229,137 @@ footer a:hover {
     margin: auto;
   }
 }
+
+
+/*RESPONSIVIDADE*/
+@media screen and (max-width: 1280px){/*desktop*/
+  .search_bar{
+    width: 30%;
+}
+
+.search_bar input{
+    width: 87%;
+}
+}
+
+@media screen and (max-width: 956px){
+  .search_bar{
+    width: 30%;
+}
+
+.search_bar input{
+    width: 85%;
+}
+}
+
+@media screen and (max-width: 800px){
+  .search_bar{
+    width: 30%;
+}
+
+.search_bar input{
+    width: 83%;
+}
+}
+
+
+@media screen and (max-width: 768px){/*tablet em pé*/
+  body{
+      font-size: 1em;
+  }
+
+  /*HEADER*/
+  header{
+      flex-direction: column;
+      height: 300px;
+      border: none;
+  }
+  
+  .search_bar{
+      width: 70%;
+  }
+  
+  .search_bar input{
+      width: 92%;
+  }
+  
+  .user_icons{
+      width: 40%;
+      display: flex;
+      justify-content: space-between;
+  }
+
+  /*NAV STYLES*/
+  nav{
+      padding: 40px;
+      background-color: #200a0c;
+      margin:0;
+      border-bottom: none;
+      box-shadow: #000 5px solid;
+  }
+
+  nav ul{
+      flex-direction: column;
+      align-items: center;
+      color: #e3d4bb;
+  }
+
+  nav a{
+      color: #e3d4bb;
+  }
+
+  nav a:hover{
+      color: #e3d4bb;
+  }  
+
+  .produtos-list:hover ul{
+      display: none;
+  }
+
+  .ambientes {
+      display: grid;
+      grid-template-columns: auto auto;
+      justify-content: center;
+      align-items: center;
+      gap:10px;
+      margin: 30px 0;
+  }
+
+}
+
+
+@media screen and (max-width: 480px){/*dispositivo móvel G*/
+  
+  /*HEADER*/
+  
+  .search_bar input{
+      width: 85%;
+      font-size: 1em;
+  }
+
+  .ambientes {
+      grid-template-columns: auto;
+  }
+ 
+  footer{
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+  }    
+  
+      .social_links{
+          text-align: left;
+          margin: 30px 0;
+      }
+}
+
+
+  @media screen and (max-width: 375px){/*dispositivo móvel M*/
+      .acessibilidade{
+          font-size: .8em;
+      }
+
+      .search_bar input{
+          width: 80%;
+      }
+  }
