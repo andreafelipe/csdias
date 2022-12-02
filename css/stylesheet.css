@@ -83,9 +83,16 @@ header{
 }
 
 .user_icons{
-  width: 15%;
+  width: 20%;
   display: flex;
   justify-content: space-around;
+}
+
+.border{
+  color: #e3d4bb;
+  border: #e3d4bb 1px solid;
+  border-radius: 5px;
+  padding: 5px;
 }
 
 /*NAV STYLES*/
