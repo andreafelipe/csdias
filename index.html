@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <!-- METADATA -->
     <meta charset="UTF-8">
@@ -17,9 +18,11 @@
     <script src="https://kit.fontawesome.com/4acddd13b5.js" crossorigin="anonymous"></script>
 
     <!-- JQUERY -->
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 
 </head>
+
 <body>
     <div class="acessibilidade flex-container">
         <ul class="atalhos">
@@ -37,18 +40,18 @@
         <div vw class="enabled">
             <div vw-access-button class="active"></div>
             <div vw-plugin-wrapper>
-              <div class="vw-plugin-top-wrapper"></div>
+                <div class="vw-plugin-top-wrapper"></div>
             </div>
         </div>
         <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
         <script>
             new window.VLibras.Widget('https://vlibras.gov.br/app');
-        </script>  
+        </script>
     </div>
 
     <header>
         <a href="/index.html"><img src="imagens/logo.png" alt="Logo CS Dias" title="Ir para página inicial"></a>
-        
+
         <div class="search_bar">
             <i class="fa-solid fa-magnifying-glass" title="Pesquisar"></i>
             <label for="search_bar"></label>
@@ -86,7 +89,7 @@
                     <li><a href="">Poltronas</a></li>
                     <li><a href="">Sofá</a></li>
                     <li><a href="">Sofanete</a></li>
-                    <li><a href="">Suporte para CPU</a></li>  
+                    <li><a href="">Suporte para CPU</a></li>
                 </ul>
             </li>
             <li><a href="">Serviços</a></li>
@@ -96,15 +99,40 @@
     </nav>
     <main id="conteudo">
         <section>
-            <img src="imagens/banner/b1.png" alt="banner ilustrativo">
+            <div class="carrossel">
+                <div class="slides fade">
+                    <img src="imagens/banner/b1.png" alt="banner ilustrativo">
+                </div>
+                <div class="slides fade">
+                    <img src="imagens/banner/b2.png" alt="banner ilustrativo">
+                </div>
+                <div class="slides fade">
+                    <img src="imagens/banner/b3.png" alt="banner ilustrativo">
+                </div>
+                <div class="slides fade">
+                    <img src="imagens/banner/b4.png" alt="banner ilustrativo">
+                </div>
+            </div>
+            <div class="bullets">
+                <span class="bullet"></span>
+                <span class="bullet"></span>
+                <span class="bullet"></span>
+                <span class="bullet"></span>
+            </div>
             <h2>AMBIENTES</h2>
             <div class="ambientes">
-                <img src="imagens/cards/cardauditorio.jpg" alt="cadeiras de auditório com estofado na cor azul, estrutura em preto">
-                <img src="imagens/cards/cardescolar.png" alt="carteira universitária, encosto e assento na cor laranja com pracheta na cor branca">
-                <img src="imagens/cards/cardescritorio.jpg" alt="Escritório com mesa em L e pequeno armário em tom de madeira, duas cadeiras com estofado azul, uma giratória e outra comum em lados opostos da mesa.">
-                <img src="imagens/cards/cardinformatica.png" alt="Rack para computador, comporta impressora, tela, teclado, scanner e cpu todos na cor branca.">
-                <img src="imagens/cards/cardrecepcao.jpg" alt="Balcão de atendimento para recepção cinza com planos em azul, cadeira giratória sem braço com encosto e assento em azul, mesmo tom do plano do balcão">
-                <img src="imagens/cards/cardtelemarketing.png" alt="Baia para telemarketing na cor branca com plano em azul com três lugares, respectivamente, três cadeiras giratórias sem braço com encosto e assento em azul, estrutura em branco">
+                <img src="imagens/cards/cardauditorio.jpg"
+                    alt="cadeiras de auditório com estofado na cor azul, estrutura em preto">
+                <img src="imagens/cards/cardescolar.png"
+                    alt="carteira universitária, encosto e assento na cor laranja com pracheta na cor branca">
+                <img src="imagens/cards/cardescritorio.jpg"
+                    alt="Escritório com mesa em L e pequeno armário em tom de madeira, duas cadeiras com estofado azul, uma giratória e outra comum em lados opostos da mesa.">
+                <img src="imagens/cards/cardinformatica.png"
+                    alt="Rack para computador, comporta impressora, tela, teclado, scanner e cpu todos na cor branca.">
+                <img src="imagens/cards/cardrecepcao.jpg"
+                    alt="Balcão de atendimento para recepção cinza com planos em azul, cadeira giratória sem braço com encosto e assento em azul, mesmo tom do plano do balcão">
+                <img src="imagens/cards/cardtelemarketing.png"
+                    alt="Baia para telemarketing na cor branca com plano em azul com três lugares, respectivamente, três cadeiras giratórias sem braço com encosto e assento em azul, estrutura em branco">
             </div>
         </section>
     </main>
@@ -128,5 +156,7 @@
 
     <script src="js/contraste.js"></script>
     <script src="js/fonte.js"></script>
+    <script src="js/carrossel.js"></script>
 </body>
+
 </html>
