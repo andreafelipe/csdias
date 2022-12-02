@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function(){
 
-    let url1 = "../css/estilo.css"
+    let url1 = "../css/stylesheet.css"
     let url2 = "../css/contraste.css"
     let contraste = document.getElementById("contraste")
     let semcontraste = document.getElementById("semcontraste")
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function(){
         document.body.appendChild(estilo)
     }
 
-    let tag = document.getElementsByClassName("acess") //<link  href=url rel="stylesheet" type="text/css">
+    let tag = document.getElementsByClassName("acess") 
 
     contraste.onclick = function(){
         tag[0].href = url2
