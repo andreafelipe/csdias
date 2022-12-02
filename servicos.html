@@ -20,6 +20,7 @@
     <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -39,18 +40,18 @@
         <div vw class="enabled">
             <div vw-access-button class="active"></div>
             <div vw-plugin-wrapper>
-              <div class="vw-plugin-top-wrapper"></div>
+                <div class="vw-plugin-top-wrapper"></div>
             </div>
         </div>
         <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
         <script>
             new window.VLibras.Widget('https://vlibras.gov.br/app');
-        </script>  
+        </script>
     </div>
 
     <header>
         <a href="/index.html"><img src="imagens/logo.png" alt="Logo CS Dias" title="Ir para página inicial"></a>
-        
+
         <div class="search_bar">
             <i class="fa-solid fa-magnifying-glass" title="Pesquisar"></i>
             <label for="search_bar"></label>
@@ -58,8 +59,14 @@
         </div>
 
         <div class="user_icons">
-            <i class="fa-regular fa-user" title="Login"></i>
-            <i class="fa-solid fa-cart-shopping" title="Carrinho"></i>
+            <a href="login.html">
+                <div class="border">
+                    <i class="fa-regular fa-user" title="Login"></i>
+                </div>
+            </a>
+            <div class="noborder">
+                <i class="fa-solid fa-cart-shopping" title="Carrinho"></i>
+            </div>
         </div>
     </header>
     <nav>
@@ -88,7 +95,7 @@
                     <li><a href="">Poltronas</a></li>
                     <li><a href="">Sofá</a></li>
                     <li><a href="">Sofanete</a></li>
-                    <li><a href="">Suporte para CPU</a></li>  
+                    <li><a href="">Suporte para CPU</a></li>
                 </ul>
             </li>
             <li><a href="servicos.html">Serviços</a></li>
@@ -97,31 +104,7 @@
         </ul>
     </nav>
 
-    <h1>Fale conosco</h1>
-    <form>
-        <label for="email" class="star">E-mail</label>
-        <br>
-        <input type="email" name="email" id="email" required>
-        <br>
-        <label for="tel" class="star">Telefone</label>
-        <br>
-        <input type="tel" name="tel" id="tel" required>
-        <br>
-        <label for="assunto" class="star">Assunto</label>
-        <br>
-        <select name="assunto" id="assunto" required>
-            <option value="duvidas">Dúvidas</option>
-            <option value="orcamentos">Orçamentos</option>
-            <option value="reclamacoes">Reclamações</option>
-            <option value="sugestoes">Sugestões</option>
-        </select>
-        <br>
-        <label for="mensagem" class="star">Mensagem</label>
-        <br>
-        <textarea name="mensagem" id="mensagem" cols="30" rows="10" required></textarea>
-        <br>
-        <input type="submit" value="Enviar">
-    </form>
+    <h1>Serviços</h1>
 
     <footer id="rodape">
         <ul>
@@ -143,7 +126,6 @@
 
     <script src="js/contraste.js"></script>
     <script src="js/fonte.js"></script>
-
 </body>
 
 </html>
