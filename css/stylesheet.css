@@ -22,10 +22,11 @@ ul {
 }
 h1 {
   text-align: center;
+  margin-bottom: 50px;
 }
-.access {
-  padding: 2% 10%;
-  font-size: 18px;
+
+.content{
+  margin: 5%;
 }
 
 /* ACCESSIBILITY BAR STYLES */
@@ -191,7 +192,12 @@ h2 {
 .contactus form {
   margin: auto auto 100px 100px;
 }
-.contactus form input[type="email"],
+
+.contactus input, select, textarea{
+  border-radius: 5px;
+}
+
+.contactus input[type="email"],
 input[type="tel"],
 textarea {
   width: 40%;
@@ -271,8 +277,9 @@ footer a:hover {
 }
 
 .search_bar input{
-    width: 87%;
+  width: 87%;
 }
+
 }
 
 @media screen and (max-width: 956px){
@@ -358,10 +365,21 @@ footer a:hover {
       margin: 30px 0;
   }
 
+  /*fale conosco*/
+  
+  .contactus input[type="email"],
+  input[type="tel"],
+  textarea {
+    width: 50%;
+  }
 }
 
 
 @media screen and (max-width: 480px){/*dispositivo móvel G*/
+
+  .content{
+    margin: 8%;
+  }
   
   /*HEADER*/
   
@@ -372,6 +390,13 @@ footer a:hover {
 
   .ambientes {
       grid-template-columns: auto;
+  }
+
+  /*fale conosco*/
+  .contactus input[type="email"],
+  input[type="tel"],
+  textarea {
+    width: 70%;
   }
  
   footer{

@@ -50,24 +50,27 @@
     </div>
 
     <header>
-        <a href="/index.html"><img src="imagens/logo.png" alt="Logo CS Dias" title="Ir para página inicial"></a>
-
-        <div class="search_bar">
-            <i class="fa-solid fa-magnifying-glass" title="Pesquisar"></i>
-            <label for="search_bar"></label>
-            <input type="text" name="search_bar" id="search_bar" placeholder="Buscar produto">
-        </div>
-
-        <div class="user_icons">
-            <a href="login.html">
-                <div class="border">
-                    <i class="fa-regular fa-user" title="Login"></i>
-                </div>
-            </a>
-            <div class="noborder">
-                <i class="fa-solid fa-cart-shopping" title="Carrinho"></i>
+        <div id="logo">
+            <a href="/index.html"><img src="imagens/logo.png" alt="Logo CS Dias" title="Ir para página inicial"></a>
             </div>
-        </div>
+    
+            <form class="search_bar" action="#" method="post">
+                <button type="submit" class="button-style".button-style><i class="fa-solid fa-magnifying-glass" title="Pesquisar"></i></button>
+                <label for="search_bar"></label>
+                <input type="text" name="search_bar" id="search_bar" placeholder="Buscar produto">
+            </form>
+    
+            <div class="user_icons">
+                <a href="login.html">
+                    <div class="border">
+                        <a href="/Login.html"><i class="fa-regular fa-user" title="Login"></i></a>
+                        <span>Login</span>
+                    </div>
+                </a>
+                <div class="noborder">
+                    <i class="fa-solid fa-cart-shopping" title="Carrinho"></i>
+                </div>
+            </div>
     </header>
     <nav>
         <ul id="menu">
@@ -104,7 +107,9 @@
         </ul>
     </nav>
 
-    <h1>Quem somos</h1>
+    <main id="conteudo">
+        <h1 class="content">Quem somos</h1>
+    </main>
 
     <footer id="rodape">
         <ul>
