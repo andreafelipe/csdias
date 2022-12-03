@@ -23,10 +23,14 @@ a {
 ul {
   list-style: none;
 }
-.access {
-  padding: 2% 10%;
-  font-size: 18px;
+
+h1 {
+  text-align: center;
+  margin-bottom: 50px;
 }
+
+.content{
+  margin: 5%;
 
 /* ACCESSIBILITY BAR STYLES */
 .flex-container {
@@ -202,13 +206,16 @@ h2 {
 .contactus {
   width: 50%;
   margin: 20px auto;
+  }
+
+.contactus input, select, textarea{
+  border-radius: 5px;
 }
-.contactus form input[type="email"],
-.contactus input[type="text"],
-textarea,
-#login_form input[type="email"],
-#login_form input[type="password"] {
-  width: 100%;
+
+.contactus input[type="email"],
+input[type="tel"],
+textarea {
+  width: 40%;
   margin-bottom: 10px;
 }
 .contactus input[type="submit"],
@@ -291,9 +298,8 @@ footer a:hover {
     width: 30%;
   }
 
-  .search_bar input {
-    width: 87%;
-  }
+.search_bar input{
+  width: 87%;
 }
 
 @media screen and (max-width: 956px) {
@@ -378,10 +384,25 @@ footer a:hover {
     gap: 10px;
     margin: 30px 0;
   }
+
+  /*fale conosco*/
+  
+  .contactus input[type="email"],
+  input[type="tel"],
+  textarea {
+    width: 50%;
+  }
 }
 
 @media screen and (max-width: 480px) {
   /*dispositivo móvel G*/
+
+
+@media screen and (max-width: 480px){/*dispositivo móvel G*/
+
+  .content{
+    margin: 8%;
+  }
 
   /*HEADER*/
 
@@ -400,19 +421,32 @@ footer a:hover {
     flex-direction: column;
   }
 
-  .social_links {
-    text-align: left;
-    margin: 30px 0;
+  /*fale conosco*/
+  .contactus input[type="email"],
+  input[type="tel"],
+  textarea {
+    width: 70%;
   }
+ 
+  footer{
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+  }    
+  
+      .social_links{
+          text-align: left;
+          margin: 30px 0;
+      }
 }
 
-@media screen and (max-width: 375px) {
-  /*dispositivo móvel M*/
-  .acessibilidade {
-    font-size: 0.8em;
-  }
 
-  .search_bar input {
-    width: 80%;
+  @media screen and (max-width: 375px){/*dispositivo móvel M*/
+      .acessibilidade{
+          font-size: .8em;
+      }
+
+      .search_bar input{
+          width: 80%;
+      }
   }
-}
